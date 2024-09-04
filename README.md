@@ -1,4 +1,3 @@
-
 # UR-langflow
 
 This project provides a Django backend with WebSocket support and JWT-based authentication. The backend is designed to work with a locally deployed, finetuned Large Language Model (LLM) to assist students pursuing undergraduate programs at the University of Rwanda.
@@ -14,7 +13,7 @@ This project provides a Django backend with WebSocket support and JWT-based auth
 ### Prerequisites
 
 - Docker and Docker Swarm
-- Python 3.x
+- Python 3.10
 - Django
 - PostgreSQL
 
@@ -74,14 +73,17 @@ ASTRA_DB_API_ENDPOINT=your_astra_db_api_endpoint
 You can test the WebSocket connection using Postman. Follow these steps:
 
 1. **Open Postman**:
+
    - Launch Postman on your system.
 
 2. **Create a New WebSocket Request**:
+
    - Click "New" > "WebSocket Request."
    - Enter the WebSocket URL: `ws://localhost:8001/ws/chat/`.
    - Click "Connect" to establish the connection.
 
 3. **Set the Authorization Header**:
+
    - After connecting, navigate to the "Headers" section.
    - Add the following header:
      - **Key**: `Authorization`
@@ -89,6 +91,7 @@ You can test the WebSocket connection using Postman. Follow these steps:
    - Replace `your_jwt_token` with your actual JWT token.
 
 4. **Send a Message**:
+
    - In the message field, enter the following JSON structure:
      ```json
      {
@@ -98,6 +101,7 @@ You can test the WebSocket connection using Postman. Follow these steps:
    - Click "Send" to send the message to the server.
 
 5. **View the Response**:
+
    - The server's response will appear in the response section of Postman.
 
 6. **Close the WebSocket Connection**:
@@ -118,6 +122,7 @@ You can test the WebSocket connection using Postman. Follow these steps:
 ### Obtain JWT Token
 
 1. **Register**:
+
    - Register by sending a POST request to `http://localhost:80/api/register/` with your username and password.
 
 2. **Get the Token**:
