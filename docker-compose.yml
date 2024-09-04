@@ -1,0 +1,69 @@
+version: '3'
+
+services:
+  web:
+    image: nkurayijah/ibl_web
+    environment:
+      - USE_POSTGRES=1
+      - DB_NAME=ibl_db
+      - DB_USER=ibl_nkurayijah
+      - DB_PASSWORD_FILE=/run/secrets/ibl_db_password_new
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DJANGO_SETTINGS_MODULE=project.settings
+      - SECRET_KEY_FILE=/run/secrets/ibl_django_secret_key
+      - DEBUG=False
+      - ALLOWED_HOSTS=localhost,127.0.0.1
+    ports:
+      - "80:8000"
+    secrets:
+      - ibl_db_password_new
+      - ibl_django_secret_key
+    deploy:
+      replicas: 2
+    command: sh -c "python manage.py migrate && gunicorn project.wsgi:application --bind 0.0.0.0:8000"
+
+  websocket:
+    image: nkurayijah/ibl_websocket
+    environment:
+      - USE_POSTGRES=1
+      - DB_NAME=ibl_db
+      - DB_USER=ibl_nkurayijah
+      - DB_PASSWORD_FILE=/run/secrets/ibl_db_password_new
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DJANGO_SETTINGS_MODULE=project.settings
+      - SECRET_KEY_FILE=/run/secrets/ibl_django_secret_key
+      - DEBUG=False
+      - ALLOWED_HOSTS=localhost,127.0.0.1
+    ports:
+      - "8001:8001"
+    secrets:
+      - ibl_db_password_new
+      - ibl_django_secret_key
+    deploy:
+      replicas: 2
+    command: sh -c "python manage.py migrate && daphne -b 0.0.0.0 -p 8001 project.asgi:application"
+
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=ibl_db
+      - POSTGRES_USER=ibl_nkurayijah
+      - POSTGRES_PASSWORD_FILE=/run/secrets/ibl_db_password_new
+    secrets:
+      - ibl_db_password_new
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+
+volumes:
+  postgres_data:
+
+secrets:
+  ibl_db_password_new:
+    external: true
+  ibl_django_secret_key:
+    external: true

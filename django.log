@@ -1,0 +1,828 @@
+INFO 2024-08-29 16:03:38,927 autoreload 67929 8002277376 Watching for file changes with StatReloader
+INFO 2024-08-29 16:04:26,999 utils 67929 6107934720 NumExpr defaulting to 8 threads.
+INFO 2024-08-29 16:04:44,026 server 67929 6107934720 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2024-08-29 16:04:44,027 server 67929 6107934720 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2024-08-29 16:04:44,028 server 67929 6107934720 Listening on TCP address 127.0.0.1:8000
+ERROR 2024-08-29 16:05:01,148 exception 67929 6271004672 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 141, in __acall__
+    response = await sync_to_async(
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-08-29 16:05:01,156 log 67929 6271004672 Bad Request: /
+WARNING 2024-08-29 16:05:01,157 runserver 67929 6107934720 [31;1mHTTP GET / 400 [0.03, 127.0.0.1:59438][0m
+INFO 2024-08-29 16:05:30,014 autoreload 67929 8002277376 /Users/nkurayijah/development/Djangoprojects/ur_langflow/project/project/settings.py changed, reloading.
+INFO 2024-08-29 16:05:30,927 autoreload 68011 8002277376 Watching for file changes with StatReloader
+INFO 2024-08-29 16:05:32,562 utils 68011 6140440576 NumExpr defaulting to 8 threads.
+INFO 2024-08-29 16:05:33,270 server 68011 6140440576 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2024-08-29 16:05:33,270 server 68011 6140440576 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2024-08-29 16:05:33,271 server 68011 6140440576 Listening on TCP address 127.0.0.1:8000
+INFO 2024-08-29 16:05:44,281 autoreload 68011 8002277376 /Users/nkurayijah/development/Djangoprojects/ur_langflow/project/project/settings.py changed, reloading.
+INFO 2024-08-29 16:06:10,656 autoreload 68062 8002277376 Watching for file changes with StatReloader
+INFO 2024-08-29 16:06:12,763 utils 68062 6147010560 NumExpr defaulting to 8 threads.
+INFO 2024-08-29 16:06:13,453 server 68062 6147010560 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2024-08-29 16:06:13,454 server 68062 6147010560 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2024-08-29 16:06:13,454 server 68062 6147010560 Listening on TCP address 127.0.0.1:8000
+WARNING 2024-08-29 16:06:22,190 log 68062 6193278976 Not Found: /
+WARNING 2024-08-29 16:06:22,190 runserver 68062 6147010560 [33mHTTP GET / 404 [0.01, 127.0.0.1:59834][0m
+INFO 2024-08-29 16:07:34,878 autoreload 68138 8002277376 Watching for file changes with StatReloader
+INFO 2024-08-29 16:07:36,728 utils 68138 6108295168 NumExpr defaulting to 8 threads.
+INFO 2024-08-29 16:07:37,449 server 68138 6108295168 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2024-08-29 16:07:37,449 server 68138 6108295168 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2024-08-29 16:07:37,450 server 68138 6108295168 Listening on TCP address 127.0.0.1:8000
+WARNING 2024-08-29 16:07:58,651 log 68138 6154563584 Not Found: /
+WARNING 2024-08-29 16:07:58,652 runserver 68138 6108295168 [33mHTTP GET / 404 [0.01, 127.0.0.1:60240][0m
+INFO 2024-08-29 16:08:02,574 runserver 68138 6108295168 WebSocket HANDSHAKING /ws/langflow/ [127.0.0.1:60260]
+INFO 2024-08-29 16:08:02,575 middleware 68138 6108295168 Headers: {b'sec-websocket-version': b'13', b'sec-websocket-key': b'bm/lTzx7QVNIn6X0ZBOU9g==', b'connection': b'Upgrade', b'upgrade': b'websocket', b'authorization': b'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0ODQ5MTg2LCJpYXQiOjE3MjQ4NDU1ODYsImp0aSI6IjZkYzAzNmViZWJiNTQ2MjdiZGZkNTA5NzFlNWI5MjY3IiwidXNlcl9pZCI6M30.n0ES2wU1T72O_MhJtRbQwg4qm7HBp2tgKif5fM60PDA', b'sec-websocket-extensions': b'permessage-deflate; client_max_window_bits', b'host': b'127.0.0.1:8000'}
+INFO 2024-08-29 16:08:02,575 middleware 68138 6108295168 Auth header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0ODQ5MTg2LCJpYXQiOjE3MjQ4NDU1ODYsImp0aSI6IjZkYzAzNmViZWJiNTQ2MjdiZGZkNTA5NzFlNWI5MjY3IiwidXNlcl9pZCI6M30.n0ES2wU1T72O_MhJtRbQwg4qm7HBp2tgKif5fM60PDA
+INFO 2024-08-29 16:08:02,575 middleware 68138 6108295168 Token extracted: eyJhbGciOi...
+ERROR 2024-08-29 16:08:02,581 middleware 68138 6137737216 Token error: Token is invalid or expired
+ERROR 2024-08-29 16:08:02,583 middleware 68138 6137737216 Token error: Token is invalid or expired
+INFO 2024-08-29 16:08:02,583 middleware 68138 6108295168 User authenticated: AnonymousUser
+INFO 2024-08-29 16:08:02,583 consumers 68138 6108295168 Attempting to connect. User: AnonymousUser
+INFO 2024-08-29 16:08:02,583 consumers 68138 6108295168 Rejecting anonymous user
+INFO 2024-08-29 16:08:02,584 runserver 68138 6108295168 WebSocket CONNECT /ws/langflow/ [127.0.0.1:60260]
+INFO 2024-08-29 16:08:02,595 runserver 68138 6108295168 WebSocket DISCONNECT /ws/langflow/ [127.0.0.1:60260]
+INFO 2024-08-29 16:08:02,595 consumers 68138 6108295168 WebSocket disconnected. Close code: 1000
+INFO 2024-08-29 16:08:08,611 runserver 68138 6108295168 WebSocket HANDSHAKING /ws/langflow/ [127.0.0.1:60285]
+INFO 2024-08-29 16:08:08,612 middleware 68138 6108295168 Headers: {b'sec-websocket-version': b'13', b'sec-websocket-key': b'9Bh8riZQxpWM0THubDmmsQ==', b'connection': b'Upgrade', b'upgrade': b'websocket', b'authorization': b'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0ODQ5MTg2LCJpYXQiOjE3MjQ4NDU1ODYsImp0aSI6IjZkYzAzNmViZWJiNTQ2MjdiZGZkNTA5NzFlNWI5MjY3IiwidXNlcl9pZCI6M30.n0ES2wU1T72O_MhJtRbQwg4qm7HBp2tgKif5fM60PDA', b'sec-websocket-extensions': b'permessage-deflate; client_max_window_bits', b'host': b'127.0.0.1:8000'}
+INFO 2024-08-29 16:08:08,612 middleware 68138 6108295168 Auth header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0ODQ5MTg2LCJpYXQiOjE3MjQ4NDU1ODYsImp0aSI6IjZkYzAzNmViZWJiNTQ2MjdiZGZkNTA5NzFlNWI5MjY3IiwidXNlcl9pZCI6M30.n0ES2wU1T72O_MhJtRbQwg4qm7HBp2tgKif5fM60PDA
+INFO 2024-08-29 16:08:08,612 middleware 68138 6108295168 Token extracted: eyJhbGciOi...
+ERROR 2024-08-29 16:08:08,612 middleware 68138 6137737216 Token error: Token is invalid or expired
+ERROR 2024-08-29 16:08:08,613 middleware 68138 6137737216 Token error: Token is invalid or expired
+INFO 2024-08-29 16:08:08,613 middleware 68138 6108295168 User authenticated: AnonymousUser
+INFO 2024-08-29 16:08:08,614 consumers 68138 6108295168 Attempting to connect. User: AnonymousUser
+INFO 2024-08-29 16:08:08,614 consumers 68138 6108295168 Rejecting anonymous user
+INFO 2024-08-29 16:08:08,614 runserver 68138 6108295168 WebSocket CONNECT /ws/langflow/ [127.0.0.1:60285]
+INFO 2024-08-29 16:08:08,617 runserver 68138 6108295168 WebSocket DISCONNECT /ws/langflow/ [127.0.0.1:60285]
+INFO 2024-08-29 16:08:08,618 consumers 68138 6108295168 WebSocket disconnected. Close code: 1000
+INFO 2024-08-29 16:08:24,322 autoreload 68138 8002277376 /Users/nkurayijah/development/Djangoprojects/ur_langflow/project/project/urls.py changed, reloading.
+INFO 2024-08-29 16:08:25,229 autoreload 68171 8002277376 Watching for file changes with StatReloader
+INFO 2024-08-29 16:09:00,506 autoreload 68232 8002277376 Watching for file changes with StatReloader
+INFO 2024-08-29 16:09:02,253 utils 68232 6149206016 NumExpr defaulting to 8 threads.
+INFO 2024-08-29 16:09:02,922 server 68232 6149206016 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2024-08-29 16:09:02,922 server 68232 6149206016 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2024-08-29 16:09:02,923 server 68232 6149206016 Listening on TCP address 127.0.0.1:8000
+INFO 2024-08-29 16:09:05,565 runserver 68232 6149206016 [mHTTP GET / 200 [0.04, 127.0.0.1:60520][0m
+INFO 2024-08-29 16:09:12,219 runserver 68232 6149206016 [mHTTP GET / 200 [0.01, 127.0.0.1:60550][0m
+INFO 2024-08-29 16:09:19,202 runserver 68232 6149206016 WebSocket HANDSHAKING /ws/langflow/ [127.0.0.1:60577]
+INFO 2024-08-29 16:09:19,202 middleware 68232 6149206016 Headers: {b'sec-websocket-version': b'13', b'sec-websocket-key': b'HZPPgVb/hcLzNeu6P3vLrg==', b'connection': b'Upgrade', b'upgrade': b'websocket', b'authorization': b'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0ODQ5MTg2LCJpYXQiOjE3MjQ4NDU1ODYsImp0aSI6IjZkYzAzNmViZWJiNTQ2MjdiZGZkNTA5NzFlNWI5MjY3IiwidXNlcl9pZCI6M30.n0ES2wU1T72O_MhJtRbQwg4qm7HBp2tgKif5fM60PDA', b'sec-websocket-extensions': b'permessage-deflate; client_max_window_bits', b'host': b'127.0.0.1:8000'}
+INFO 2024-08-29 16:09:19,202 middleware 68232 6149206016 Auth header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0ODQ5MTg2LCJpYXQiOjE3MjQ4NDU1ODYsImp0aSI6IjZkYzAzNmViZWJiNTQ2MjdiZGZkNTA5NzFlNWI5MjY3IiwidXNlcl9pZCI6M30.n0ES2wU1T72O_MhJtRbQwg4qm7HBp2tgKif5fM60PDA
+INFO 2024-08-29 16:09:19,202 middleware 68232 6149206016 Token extracted: eyJhbGciOi...
+ERROR 2024-08-29 16:09:19,211 middleware 68232 6325039104 Token error: Token is invalid or expired
+ERROR 2024-08-29 16:09:19,212 middleware 68232 6325039104 Token error: Token is invalid or expired
+INFO 2024-08-29 16:09:19,212 middleware 68232 6149206016 User authenticated: AnonymousUser
+INFO 2024-08-29 16:09:19,213 consumers 68232 6149206016 Attempting to connect. User: AnonymousUser
+INFO 2024-08-29 16:09:19,213 consumers 68232 6149206016 Rejecting anonymous user
+INFO 2024-08-29 16:09:19,213 runserver 68232 6149206016 WebSocket CONNECT /ws/langflow/ [127.0.0.1:60577]
+INFO 2024-08-29 16:09:19,215 runserver 68232 6149206016 WebSocket DISCONNECT /ws/langflow/ [127.0.0.1:60577]
+INFO 2024-08-29 16:09:19,215 consumers 68232 6149206016 WebSocket disconnected. Close code: 1000
+INFO 2024-08-29 16:09:20,872 runserver 68232 6149206016 WebSocket HANDSHAKING /ws/langflow/ [127.0.0.1:60585]
+INFO 2024-08-29 16:09:20,872 middleware 68232 6149206016 Headers: {b'sec-websocket-version': b'13', b'sec-websocket-key': b'auzJQEOemSX/9iT3yZvLAA==', b'connection': b'Upgrade', b'upgrade': b'websocket', b'authorization': b'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0ODQ5MTg2LCJpYXQiOjE3MjQ4NDU1ODYsImp0aSI6IjZkYzAzNmViZWJiNTQ2MjdiZGZkNTA5NzFlNWI5MjY3IiwidXNlcl9pZCI6M30.n0ES2wU1T72O_MhJtRbQwg4qm7HBp2tgKif5fM60PDA', b'sec-websocket-extensions': b'permessage-deflate; client_max_window_bits', b'host': b'127.0.0.1:8000'}
+INFO 2024-08-29 16:09:20,873 middleware 68232 6149206016 Auth header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0ODQ5MTg2LCJpYXQiOjE3MjQ4NDU1ODYsImp0aSI6IjZkYzAzNmViZWJiNTQ2MjdiZGZkNTA5NzFlNWI5MjY3IiwidXNlcl9pZCI6M30.n0ES2wU1T72O_MhJtRbQwg4qm7HBp2tgKif5fM60PDA
+INFO 2024-08-29 16:09:20,873 middleware 68232 6149206016 Token extracted: eyJhbGciOi...
+ERROR 2024-08-29 16:09:20,874 middleware 68232 6325039104 Token error: Token is invalid or expired
+ERROR 2024-08-29 16:09:20,876 middleware 68232 6325039104 Token error: Token is invalid or expired
+INFO 2024-08-29 16:09:20,876 middleware 68232 6149206016 User authenticated: AnonymousUser
+INFO 2024-08-29 16:09:20,877 consumers 68232 6149206016 Attempting to connect. User: AnonymousUser
+INFO 2024-08-29 16:09:20,877 consumers 68232 6149206016 Rejecting anonymous user
+INFO 2024-08-29 16:09:20,877 runserver 68232 6149206016 WebSocket CONNECT /ws/langflow/ [127.0.0.1:60585]
+INFO 2024-08-29 16:09:20,878 runserver 68232 6149206016 WebSocket DISCONNECT /ws/langflow/ [127.0.0.1:60585]
+INFO 2024-08-29 16:09:20,878 consumers 68232 6149206016 WebSocket disconnected. Close code: 1000
+INFO 2024-08-29 16:17:09,105 runserver 68232 6149206016 WebSocket HANDSHAKING /ws/langflow/ [127.0.0.1:62421]
+INFO 2024-08-29 16:17:09,106 middleware 68232 6149206016 Headers: {b'sec-websocket-version': b'13', b'sec-websocket-key': b'4pKP8KCNedT4u+4ayVw9Ag==', b'connection': b'Upgrade', b'upgrade': b'websocket', b'authorization': b'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0ODQ5MTg2LCJpYXQiOjE3MjQ4NDU1ODYsImp0aSI6IjZkYzAzNmViZWJiNTQ2MjdiZGZkNTA5NzFlNWI5MjY3IiwidXNlcl9pZCI6M30.n0ES2wU1T72O_MhJtRbQwg4qm7HBp2tgKif5fM60PDA', b'sec-websocket-extensions': b'permessage-deflate; client_max_window_bits', b'host': b'127.0.0.1:8000'}
+INFO 2024-08-29 16:17:09,106 middleware 68232 6149206016 Auth header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0ODQ5MTg2LCJpYXQiOjE3MjQ4NDU1ODYsImp0aSI6IjZkYzAzNmViZWJiNTQ2MjdiZGZkNTA5NzFlNWI5MjY3IiwidXNlcl9pZCI6M30.n0ES2wU1T72O_MhJtRbQwg4qm7HBp2tgKif5fM60PDA
+INFO 2024-08-29 16:17:09,106 middleware 68232 6149206016 Token extracted: eyJhbGciOi...
+ERROR 2024-08-29 16:17:09,109 middleware 68232 6325039104 Token error: Token is invalid or expired
+ERROR 2024-08-29 16:17:09,109 middleware 68232 6325039104 Token error: Token is invalid or expired
+INFO 2024-08-29 16:17:09,109 middleware 68232 6149206016 User authenticated: AnonymousUser
+INFO 2024-08-29 16:17:09,110 consumers 68232 6149206016 Attempting to connect. User: AnonymousUser
+INFO 2024-08-29 16:17:09,110 consumers 68232 6149206016 Rejecting anonymous user
+INFO 2024-08-29 16:17:09,110 runserver 68232 6149206016 WebSocket CONNECT /ws/langflow/ [127.0.0.1:62421]
+INFO 2024-08-29 16:17:09,112 runserver 68232 6149206016 WebSocket DISCONNECT /ws/langflow/ [127.0.0.1:62421]
+INFO 2024-08-29 16:17:09,113 consumers 68232 6149206016 WebSocket disconnected. Close code: 1000
+INFO 2024-08-29 16:17:20,762 runserver 68232 6149206016 WebSocket HANDSHAKING /ws/langflow/ [127.0.0.1:62463]
+INFO 2024-08-29 16:17:20,762 middleware 68232 6149206016 Headers: {b'sec-websocket-version': b'13', b'sec-websocket-key': b'lRcLYcR4ON8PEev5prhB/A==', b'connection': b'Upgrade', b'upgrade': b'websocket', b'authorization': b'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0ODQ5MTg2LCJpYXQiOjE3MjQ4NDU1ODYsImp0aSI6IjZkYzAzNmViZWJiNTQ2MjdiZGZkNTA5NzFlNWI5MjY3IiwidXNlcl9pZCI6M30.n0ES2wU1T72O_MhJtRbQwg4qm7HBp2tgKif5fM60PDA', b'sec-websocket-extensions': b'permessage-deflate; client_max_window_bits', b'host': b'127.0.0.1:8000'}
+INFO 2024-08-29 16:17:20,762 middleware 68232 6149206016 Auth header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0ODQ5MTg2LCJpYXQiOjE3MjQ4NDU1ODYsImp0aSI6IjZkYzAzNmViZWJiNTQ2MjdiZGZkNTA5NzFlNWI5MjY3IiwidXNlcl9pZCI6M30.n0ES2wU1T72O_MhJtRbQwg4qm7HBp2tgKif5fM60PDA
+INFO 2024-08-29 16:17:20,762 middleware 68232 6149206016 Token extracted: eyJhbGciOi...
+ERROR 2024-08-29 16:17:20,762 middleware 68232 6325039104 Token error: Token is invalid or expired
+ERROR 2024-08-29 16:17:20,763 middleware 68232 6325039104 Token error: Token is invalid or expired
+INFO 2024-08-29 16:17:20,763 middleware 68232 6149206016 User authenticated: AnonymousUser
+INFO 2024-08-29 16:17:20,763 consumers 68232 6149206016 Attempting to connect. User: AnonymousUser
+INFO 2024-08-29 16:17:20,763 consumers 68232 6149206016 Rejecting anonymous user
+INFO 2024-08-29 16:17:20,763 runserver 68232 6149206016 WebSocket CONNECT /ws/langflow/ [127.0.0.1:62463]
+INFO 2024-08-29 16:17:20,764 runserver 68232 6149206016 WebSocket DISCONNECT /ws/langflow/ [127.0.0.1:62463]
+INFO 2024-08-29 16:17:20,764 consumers 68232 6149206016 WebSocket disconnected. Close code: 1000
+ERROR 2024-08-29 16:18:46,889 exception 68232 6358691840 Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 141, in __acall__
+    response = await sync_to_async(
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2024-08-29 16:18:46,893 log 68232 6358691840 Bad Request: /api/token/
+WARNING 2024-08-29 16:18:46,894 runserver 68232 6149206016 [31;1mHTTP POST /api/token/ 400 [0.01, 127.0.0.1:62840][0m
+WARNING 2024-08-29 16:19:00,483 log 68232 6358691840 Unauthorized: /api/token/
+WARNING 2024-08-29 16:19:00,484 runserver 68232 6149206016 [31;1mHTTP POST /api/token/ 401 [0.18, 127.0.0.1:62896][0m
+ERROR 2024-08-29 16:19:07,625 exception 68232 6358691840 Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 141, in __acall__
+    response = await sync_to_async(
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2024-08-29 16:19:07,626 log 68232 6358691840 Bad Request: /api/register/
+WARNING 2024-08-29 16:19:07,627 runserver 68232 6149206016 [31;1mHTTP POST /api/register/ 400 [0.00, 127.0.0.1:62925][0m
+INFO 2024-08-29 16:19:19,704 runserver 68232 6149206016 [mHTTP POST /api/register/ 201 [0.14, 127.0.0.1:62975][0m
+INFO 2024-08-29 16:19:53,749 runserver 68232 6149206016 [mHTTP POST /api/token/ 200 [0.19, 127.0.0.1:63126][0m
+ERROR 2024-08-29 16:20:11,700 exception 68232 6358691840 Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 141, in __acall__
+    response = await sync_to_async(
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2024-08-29 16:20:11,702 log 68232 6358691840 Bad Request: /api/agent/
+WARNING 2024-08-29 16:20:11,702 runserver 68232 6149206016 [31;1mHTTP POST /api/agent/ 400 [0.00, 127.0.0.1:63207][0m
+INFO 2024-08-29 16:20:44,285 _client 68232 6341865472 HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:20:44,290 db 68232 6341865472 ASTRA_DB_KEYSPACE is not set. Defaulting to 'default_keyspace'
+INFO 2024-08-29 16:20:47,808 _client 68232 6341865472 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:20:49,192 _client 68232 6341865472 HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:20:53,704 _client 68232 10872713216 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/langflow "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:20:53,850 _client 68232 10889539584 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/langflow "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:20:54,752 _client 68232 10906365952 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/langflow "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:20:55,208 _client 68232 10923192320 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/langflow "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:20:55,645 _client 68232 6341865472 HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:20:57,228 _client 68232 6341865472 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/langflow "HTTP/1.1 200 OK"
+ERROR 2024-08-29 16:20:57,402 log 68232 6358691840 Internal Server Error: /api/agent/
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/project/app/views.py", line 50, in post
+    result_data = run_output.outputs[0]
+AttributeError: 'str' object has no attribute 'outputs'
+ERROR 2024-08-29 16:20:57,541 runserver 68232 6149206016 [35;1mHTTP POST /api/agent/ 500 [32.68, 127.0.0.1:63261][0m
+INFO 2024-08-29 16:33:58,295 autoreload 68232 8002277376 /Users/nkurayijah/development/Djangoprojects/ur_langflow/project/app/langflow_integration/langflow_config.py changed, reloading.
+INFO 2024-08-29 16:33:59,840 autoreload 69055 8002277376 Watching for file changes with StatReloader
+INFO 2024-08-29 16:34:01,505 utils 69055 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-08-29 16:34:02,163 server 69055 6143078400 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2024-08-29 16:34:02,163 server 69055 6143078400 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2024-08-29 16:34:02,163 server 69055 6143078400 Listening on TCP address 127.0.0.1:8000
+WARNING 2024-08-29 16:34:06,741 log 69055 6189346816 Unauthorized: /api/agent/
+WARNING 2024-08-29 16:34:06,741 runserver 69055 6143078400 [31;1mHTTP POST /api/agent/ 401 [0.01, 127.0.0.1:50328][0m
+WARNING 2024-08-29 16:34:08,335 log 69055 6189346816 Unauthorized: /api/agent/
+WARNING 2024-08-29 16:34:08,336 runserver 69055 6143078400 [31;1mHTTP POST /api/agent/ 401 [0.01, 127.0.0.1:50330][0m
+WARNING 2024-08-29 16:34:08,548 log 69055 6189346816 Unauthorized: /api/agent/
+WARNING 2024-08-29 16:34:08,549 runserver 69055 6143078400 [31;1mHTTP POST /api/agent/ 401 [0.00, 127.0.0.1:50331][0m
+INFO 2024-08-29 16:34:39,487 runserver 69055 6143078400 [mHTTP POST /api/token/ 200 [0.14, 127.0.0.1:50450][0m
+INFO 2024-08-29 16:35:00,357 _client 69055 6172520448 HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:35:00,393 db 69055 6172520448 ASTRA_DB_KEYSPACE is not set. Defaulting to 'default_keyspace'
+INFO 2024-08-29 16:35:03,626 _client 69055 6172520448 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:35:05,156 _client 69055 6172520448 HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:35:10,848 _client 69055 10888491008 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/langflow "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:35:11,263 _client 69055 10905317376 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/langflow "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:35:12,429 _client 69055 10922143744 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/langflow "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:35:13,200 _client 69055 10871664640 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/langflow "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:35:13,842 _client 69055 6172520448 HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:35:16,272 _client 69055 6172520448 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/langflow "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:35:21,142 _client 69055 6172520448 HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:35:21,219 runserver 69055 6143078400 [mHTTP POST /api/agent/ 200 [25.37, 127.0.0.1:50501][0m
+INFO 2024-08-29 16:35:31,285 runserver 69055 6143078400 WebSocket HANDSHAKING /ws/langflow/ [127.0.0.1:50671]
+INFO 2024-08-29 16:35:31,286 middleware 69055 6143078400 Headers: {b'sec-websocket-version': b'13', b'sec-websocket-key': b'bMRStL9VeVR1fW8zfKnfdQ==', b'connection': b'Upgrade', b'upgrade': b'websocket', b'authorization': b'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0ODQ5MTg2LCJpYXQiOjE3MjQ4NDU1ODYsImp0aSI6IjZkYzAzNmViZWJiNTQ2MjdiZGZkNTA5NzFlNWI5MjY3IiwidXNlcl9pZCI6M30.n0ES2wU1T72O_MhJtRbQwg4qm7HBp2tgKif5fM60PDA', b'sec-websocket-extensions': b'permessage-deflate; client_max_window_bits', b'host': b'127.0.0.1:8000'}
+INFO 2024-08-29 16:35:31,286 middleware 69055 6143078400 Auth header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0ODQ5MTg2LCJpYXQiOjE3MjQ4NDU1ODYsImp0aSI6IjZkYzAzNmViZWJiNTQ2MjdiZGZkNTA5NzFlNWI5MjY3IiwidXNlcl9pZCI6M30.n0ES2wU1T72O_MhJtRbQwg4qm7HBp2tgKif5fM60PDA
+INFO 2024-08-29 16:35:31,286 middleware 69055 6143078400 Token extracted: eyJhbGciOi...
+ERROR 2024-08-29 16:35:31,287 middleware 69055 6172520448 Token error: Token is invalid or expired
+ERROR 2024-08-29 16:35:31,288 middleware 69055 6172520448 Token error: Token is invalid or expired
+INFO 2024-08-29 16:35:31,288 middleware 69055 6143078400 User authenticated: AnonymousUser
+INFO 2024-08-29 16:35:31,289 consumers 69055 6143078400 Attempting to connect. User: AnonymousUser
+INFO 2024-08-29 16:35:31,289 consumers 69055 6143078400 Rejecting anonymous user
+INFO 2024-08-29 16:35:31,289 runserver 69055 6143078400 WebSocket CONNECT /ws/langflow/ [127.0.0.1:50671]
+INFO 2024-08-29 16:35:31,291 runserver 69055 6143078400 WebSocket DISCONNECT /ws/langflow/ [127.0.0.1:50671]
+INFO 2024-08-29 16:35:31,292 consumers 69055 6143078400 WebSocket disconnected. Close code: 1000
+INFO 2024-08-29 16:35:59,101 runserver 69055 6143078400 WebSocket HANDSHAKING /ws/langflow/ [127.0.0.1:50794]
+INFO 2024-08-29 16:35:59,102 middleware 69055 6143078400 Headers: {b'sec-websocket-version': b'13', b'sec-websocket-key': b'utpXtWeyQ1i3cCVJNP42PA==', b'connection': b'Upgrade', b'upgrade': b'websocket', b'authorization': b'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0OTUyODc5LCJpYXQiOjE3MjQ5NDkyNzksImp0aSI6Ijg3MDRmNDMxZmIzODQwN2JhZjY0M2Q2ZWI4YTE3M2QzIiwidXNlcl9pZCI6MX0.ZzxsF_th0Gp-hspaEQF9lHi6xtLHaDiA4CCgnR-Y0ng', b'sec-websocket-extensions': b'permessage-deflate; client_max_window_bits', b'host': b'127.0.0.1:8000'}
+INFO 2024-08-29 16:35:59,102 middleware 69055 6143078400 Auth header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0OTUyODc5LCJpYXQiOjE3MjQ5NDkyNzksImp0aSI6Ijg3MDRmNDMxZmIzODQwN2JhZjY0M2Q2ZWI4YTE3M2QzIiwidXNlcl9pZCI6MX0.ZzxsF_th0Gp-hspaEQF9lHi6xtLHaDiA4CCgnR-Y0ng
+INFO 2024-08-29 16:35:59,102 middleware 69055 6143078400 Token extracted: eyJhbGciOi...
+INFO 2024-08-29 16:35:59,108 middleware 69055 6143078400 User authenticated: (<User: testuser3>, None)
+INFO 2024-08-29 16:35:59,108 consumers 69055 6143078400 Attempting to connect. User: (<User: testuser3>, None)
+INFO 2024-08-29 16:35:59,108 consumers 69055 6143078400 Accepting connection for user: (<User: testuser3>, None)
+INFO 2024-08-29 16:35:59,108 runserver 69055 6143078400 WebSocket CONNECT /ws/langflow/ [127.0.0.1:50794]
+INFO 2024-08-29 16:36:05,045 consumers 69055 6143078400 Received data: {"message": "What are the branch locations for the...
+INFO 2024-08-29 16:36:07,842 _client 69055 6172520448 HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:36:07,849 db 69055 6172520448 ASTRA_DB_KEYSPACE is not set. Defaulting to 'default_keyspace'
+INFO 2024-08-29 16:36:11,216 _client 69055 6172520448 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:36:12,721 _client 69055 6172520448 HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:36:17,977 _client 69055 10940018688 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/langflow "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:36:18,487 _client 69055 10905317376 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/langflow "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:36:18,495 _client 69055 10888491008 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/langflow "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:36:19,123 _client 69055 10923192320 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/langflow "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:36:19,595 _client 69055 6172520448 HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:36:23,011 _client 69055 6172520448 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/langflow "HTTP/1.1 200 OK"
+INFO 2024-08-29 16:36:25,091 _client 69055 6172520448 HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR 2024-08-29 16:37:28,004 base_events 69055 8002277376 Task was destroyed but it is pending!
+task: <Task pending name='Task-50' coro=<Graph.end_all_traces() running at /Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/langflow/graph/graph/base.py:506>>
+INFO 2024-09-03 07:35:09,716 autoreload 26918 8002277376 Watching for file changes with StatReloader
+INFO 2024-09-03 07:35:11,952 utils 26918 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 07:35:12,804 server 26918 6114324480 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2024-09-03 07:35:12,804 server 26918 6114324480 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2024-09-03 07:35:12,805 server 26918 6114324480 Listening on TCP address 127.0.0.1:8000
+INFO 2024-09-03 07:35:20,210 runserver 26918 6114324480 [mHTTP POST /api/token/ 200 [0.14, 127.0.0.1:65002][0m
+INFO 2024-09-03 07:36:04,644 _client 26918 6143766528 HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO 2024-09-03 07:36:04,657 db 26918 6143766528 ASTRA_DB_KEYSPACE is not set. Defaulting to 'default_keyspace'
+INFO 2024-09-03 07:36:06,521 _client 26918 6143766528 HTTP Request: POST https://40ac0fa4-73a1-42cf-916c-daf0cf3f19c3-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace "HTTP/1.1 401 Unauthorized"
+ERROR 2024-09-03 07:36:06,575 log 26918 10888441856 Internal Server Error: /api/agent/
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/project/app/views.py", line 50, in post
+    result_data = run_output.outputs[0]
+AttributeError: 'str' object has no attribute 'outputs'
+ERROR 2024-09-03 07:36:06,580 runserver 26918 6114324480 [35;1mHTTP POST /api/agent/ 500 [10.97, 127.0.0.1:65009][0m
+INFO 2024-09-03 07:57:13,703 autoreload 29157 8002277376 Watching for file changes with StatReloader
+INFO 2024-09-03 07:57:15,494 utils 29157 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 07:57:16,183 server 29157 6184513536 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2024-09-03 07:57:16,183 server 29157 6184513536 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2024-09-03 07:57:16,184 server 29157 6184513536 Listening on TCP address 127.0.0.1:8000
+INFO 2024-09-03 07:58:35,196 runserver 29157 6184513536 [mHTTP POST /api/test-token/ 200 [0.16, 127.0.0.1:49739][0m
+INFO 2024-09-03 07:58:39,493 runserver 29157 6184513536 [mHTTP POST /api/test-token/ 200 [0.15, 127.0.0.1:49740][0m
+INFO 2024-09-03 10:03:47,765 utils 32910 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 10:16:44,183 utils 33544 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 10:17:14,211 utils 33593 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 10:23:21,995 utils 33832 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 10:27:35,129 utils 34043 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 10:29:32,679 utils 34108 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 10:32:14,101 utils 34221 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 10:33:36,717 utils 34276 8002277376 NumExpr defaulting to 8 threads.
+ERROR 2024-09-03 10:33:37,249 log 34276 8002277376 Internal Server Error: /api/agent/
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/project/app/views.py", line 48, in post
+    result_data = run_output.outputs[0]
+AttributeError: 'dict' object has no attribute 'outputs'
+WARNING 2024-09-03 10:33:37,380 log 34276 8002277376 Unauthorized: /api/agent/
+WARNING 2024-09-03 10:33:37,636 log 34276 8002277376 Bad Request: /api/register/
+INFO 2024-09-03 10:34:01,193 utils 34322 8002277376 NumExpr defaulting to 8 threads.
+ERROR 2024-09-03 10:34:01,755 log 34322 8002277376 Internal Server Error: /api/agent/
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/project/app/views.py", line 48, in post
+    result_data = run_output.outputs[0]
+AttributeError: 'dict' object has no attribute 'outputs'
+WARNING 2024-09-03 10:34:01,886 log 34322 8002277376 Unauthorized: /api/agent/
+WARNING 2024-09-03 10:34:02,014 log 34322 8002277376 Bad Request: /api/register/
+INFO 2024-09-03 10:36:55,377 utils 34549 8002277376 NumExpr defaulting to 8 threads.
+WARNING 2024-09-03 10:36:55,915 log 34549 8002277376 Bad Request: /api/register/
+INFO 2024-09-03 10:37:22,675 utils 34603 8002277376 NumExpr defaulting to 8 threads.
+ERROR 2024-09-03 10:37:23,295 middleware 34603 8002277376 Token error: Token is invalid or expired
+ERROR 2024-09-03 10:37:23,421 middleware 34603 8002277376 Token error: Token is invalid or expired
+INFO 2024-09-03 10:37:23,675 middleware 34603 6199406592 Headers: {}
+INFO 2024-09-03 10:37:23,675 middleware 34603 6199406592 Auth header: 
+INFO 2024-09-03 10:37:23,675 middleware 34603 6199406592 No valid token provided, user is anonymous
+INFO 2024-09-03 10:37:23,804 middleware 34603 6199406592 Headers: {b'authorization': b'Bearer valid_token'}
+INFO 2024-09-03 10:37:23,805 middleware 34603 6199406592 Auth header: Bearer valid_token
+INFO 2024-09-03 10:37:23,805 middleware 34603 6199406592 Token extracted: valid_toke...
+INFO 2024-09-03 10:37:23,805 middleware 34603 6199406592 User authenticated: (<User: testuser>, None)
+INFO 2024-09-03 10:42:54,313 utils 34774 8002277376 NumExpr defaulting to 8 threads.
+ERROR 2024-09-03 10:42:54,923 middleware 34774 8002277376 Token error: Token is invalid or expired
+ERROR 2024-09-03 10:42:55,052 middleware 34774 8002277376 Token error: Token is invalid or expired
+INFO 2024-09-03 10:42:55,306 middleware 34774 6123384832 Headers: {}
+INFO 2024-09-03 10:42:55,306 middleware 34774 6123384832 Auth header: 
+INFO 2024-09-03 10:42:55,306 middleware 34774 6123384832 No valid token provided, user is anonymous
+INFO 2024-09-03 10:42:55,435 middleware 34774 6123384832 Headers: {b'authorization': b'Bearer valid_token'}
+INFO 2024-09-03 10:42:55,435 middleware 34774 6123384832 Auth header: Bearer valid_token
+INFO 2024-09-03 10:42:55,435 middleware 34774 6123384832 Token extracted: valid_toke...
+INFO 2024-09-03 10:42:55,435 middleware 34774 6123384832 User authenticated: testuser
+INFO 2024-09-03 10:43:27,571 utils 34819 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 10:43:28,337 consumers 34819 6137638912 Attempting to connect. User: None
+INFO 2024-09-03 10:43:28,337 consumers 34819 6137638912 Accepting connection for user: None
+INFO 2024-09-03 10:52:26,331 utils 35124 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 10:52:27,154 consumers 35124 6186741760 Attempting to connect. User: testuser
+INFO 2024-09-03 10:52:27,154 consumers 35124 6186741760 Accepting connection for user: testuser
+INFO 2024-09-03 10:52:27,154 consumers 35124 6186741760 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 10:52:27,155 consumers 35124 6186741760 Attempting to connect. User: None
+INFO 2024-09-03 10:52:27,155 consumers 35124 6186741760 Accepting connection for user: None
+INFO 2024-09-03 10:52:28,315 consumers 35124 6203568128 Attempting to connect. User: testuser
+INFO 2024-09-03 10:52:28,315 consumers 35124 6203568128 Accepting connection for user: testuser
+INFO 2024-09-03 10:52:28,315 consumers 35124 6203568128 Received data: Invalid JSON...
+INFO 2024-09-03 10:52:28,315 consumers 35124 6203568128 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 10:52:28,444 consumers 35124 6203568128 Attempting to connect. User: testuser
+INFO 2024-09-03 10:52:28,444 consumers 35124 6203568128 Accepting connection for user: testuser
+INFO 2024-09-03 10:52:28,444 consumers 35124 6203568128 Received data: {"message": "Test question"}...
+ERROR 2024-09-03 10:52:28,444 consumers 35124 6203568128 Error processing message: 'dict' object has no attribute 'outputs'
+INFO 2024-09-03 10:58:32,843 utils 35311 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 10:58:33,673 consumers 35311 6167572480 Attempting to connect. User: testuser
+INFO 2024-09-03 10:58:33,673 consumers 35311 6167572480 Accepting connection for user: testuser
+INFO 2024-09-03 10:58:33,673 consumers 35311 6167572480 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 10:58:33,674 consumers 35311 6167572480 Attempting to connect. User: None
+INFO 2024-09-03 10:58:33,674 consumers 35311 6167572480 Accepting connection for user: None
+INFO 2024-09-03 10:58:34,833 consumers 35311 6184398848 Attempting to connect. User: testuser
+INFO 2024-09-03 10:58:34,834 consumers 35311 6184398848 Accepting connection for user: testuser
+INFO 2024-09-03 10:58:34,834 consumers 35311 6184398848 Received data: Invalid JSON...
+INFO 2024-09-03 10:58:34,834 consumers 35311 6184398848 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 10:58:34,962 consumers 35311 6167572480 Attempting to connect. User: testuser
+INFO 2024-09-03 10:58:34,962 consumers 35311 6167572480 Accepting connection for user: testuser
+INFO 2024-09-03 10:58:34,963 consumers 35311 6167572480 Received data: {"message": "Test question"}...
+ERROR 2024-09-03 10:58:34,963 consumers 35311 6167572480 Error processing message: 'dict' object has no attribute 'outputs'
+INFO 2024-09-03 11:00:36,431 utils 35408 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 11:00:37,202 consumers 35408 6203011072 Attempting to connect. User: testuser
+INFO 2024-09-03 11:00:37,202 consumers 35408 6203011072 Accepting connection for user: testuser
+INFO 2024-09-03 11:00:37,202 consumers 35408 6203011072 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:00:37,203 consumers 35408 6203011072 Attempting to connect. User: None
+INFO 2024-09-03 11:00:37,203 consumers 35408 6203011072 Accepting connection for user: None
+INFO 2024-09-03 11:00:38,362 consumers 35408 6219837440 Attempting to connect. User: testuser
+INFO 2024-09-03 11:00:38,362 consumers 35408 6219837440 Accepting connection for user: testuser
+INFO 2024-09-03 11:00:38,362 consumers 35408 6219837440 Received data: Invalid JSON...
+INFO 2024-09-03 11:00:38,362 consumers 35408 6219837440 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:00:38,490 consumers 35408 6219837440 Attempting to connect. User: testuser
+INFO 2024-09-03 11:00:38,490 consumers 35408 6219837440 Accepting connection for user: testuser
+INFO 2024-09-03 11:00:38,490 consumers 35408 6219837440 Received data: {"message": "Test question"}...
+ERROR 2024-09-03 11:00:38,490 consumers 35408 6219837440 Error processing message: 'dict' object has no attribute 'outputs'
+INFO 2024-09-03 11:03:35,162 utils 35528 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 11:03:35,957 consumers 35528 6199996416 Attempting to connect. User: testuser
+INFO 2024-09-03 11:03:35,957 consumers 35528 6199996416 Accepting connection for user: testuser
+INFO 2024-09-03 11:03:35,957 consumers 35528 6199996416 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:03:35,958 consumers 35528 6199996416 Attempting to connect. User: None
+INFO 2024-09-03 11:03:35,958 consumers 35528 6199996416 Accepting connection for user: None
+INFO 2024-09-03 11:03:37,104 consumers 35528 6216822784 Attempting to connect. User: testuser
+INFO 2024-09-03 11:03:37,104 consumers 35528 6216822784 Accepting connection for user: testuser
+INFO 2024-09-03 11:03:37,104 consumers 35528 6216822784 Received data: Invalid JSON...
+INFO 2024-09-03 11:03:37,105 consumers 35528 6216822784 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:03:37,237 consumers 35528 6216822784 Attempting to connect. User: testuser
+INFO 2024-09-03 11:03:37,237 consumers 35528 6216822784 Accepting connection for user: testuser
+INFO 2024-09-03 11:03:37,237 consumers 35528 6216822784 Received data: {"message": "Test question"}...
+ERROR 2024-09-03 11:03:37,237 consumers 35528 6216822784 Error processing message: 'dict' object has no attribute 'outputs'
+INFO 2024-09-03 11:03:59,384 utils 35575 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 11:04:00,154 consumers 35575 6152318976 Attempting to connect. User: testuser
+INFO 2024-09-03 11:04:00,154 consumers 35575 6152318976 Accepting connection for user: testuser
+INFO 2024-09-03 11:04:00,154 consumers 35575 6152318976 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:04:00,155 consumers 35575 6152318976 Attempting to connect. User: None
+INFO 2024-09-03 11:04:00,155 consumers 35575 6152318976 Accepting connection for user: None
+INFO 2024-09-03 11:04:01,299 consumers 35575 6169145344 Attempting to connect. User: testuser
+INFO 2024-09-03 11:04:01,299 consumers 35575 6169145344 Accepting connection for user: testuser
+INFO 2024-09-03 11:04:01,299 consumers 35575 6169145344 Received data: Invalid JSON...
+INFO 2024-09-03 11:04:01,299 consumers 35575 6169145344 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:04:01,426 consumers 35575 6152318976 Attempting to connect. User: testuser
+INFO 2024-09-03 11:04:01,426 consumers 35575 6152318976 Accepting connection for user: testuser
+INFO 2024-09-03 11:04:01,426 consumers 35575 6152318976 Received data: {"message": "Test question"}...
+ERROR 2024-09-03 11:04:01,426 consumers 35575 6152318976 Error processing message: 'dict' object has no attribute 'outputs'
+INFO 2024-09-03 11:04:47,413 utils 35636 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 11:04:48,300 consumers 35636 6187102208 Attempting to connect. User: testuser
+INFO 2024-09-03 11:04:48,300 consumers 35636 6187102208 Accepting connection for user: testuser
+INFO 2024-09-03 11:04:48,300 consumers 35636 6187102208 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:04:48,303 consumers 35636 6187102208 Attempting to connect. User: None
+INFO 2024-09-03 11:04:48,303 consumers 35636 6187102208 Accepting connection for user: None
+INFO 2024-09-03 11:04:49,464 consumers 35636 6203928576 Attempting to connect. User: testuser
+INFO 2024-09-03 11:04:49,464 consumers 35636 6203928576 Accepting connection for user: testuser
+INFO 2024-09-03 11:04:49,464 consumers 35636 6203928576 Received data: Invalid JSON...
+INFO 2024-09-03 11:04:49,464 consumers 35636 6203928576 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:04:49,595 consumers 35636 6187102208 Attempting to connect. User: testuser
+INFO 2024-09-03 11:04:49,595 consumers 35636 6187102208 Accepting connection for user: testuser
+INFO 2024-09-03 11:04:49,595 consumers 35636 6187102208 Received data: {"message": "Test question"}...
+ERROR 2024-09-03 11:04:49,596 consumers 35636 6187102208 Error processing message: 'dict' object has no attribute 'outputs'
+INFO 2024-09-03 11:08:52,184 utils 35867 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 11:08:52,948 consumers 35867 10762252288 Attempting to connect. User: testuser
+INFO 2024-09-03 11:08:52,949 consumers 35867 10762252288 Accepting connection for user: testuser
+INFO 2024-09-03 11:08:52,949 consumers 35867 10762252288 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:08:52,950 consumers 35867 10762252288 Attempting to connect. User: None
+INFO 2024-09-03 11:08:52,950 consumers 35867 10762252288 Accepting connection for user: None
+INFO 2024-09-03 11:08:54,106 consumers 35867 10779078656 Attempting to connect. User: testuser
+INFO 2024-09-03 11:08:54,107 consumers 35867 10779078656 Accepting connection for user: testuser
+INFO 2024-09-03 11:08:54,107 consumers 35867 10779078656 Received data: Invalid JSON...
+ERROR 2024-09-03 11:08:54,107 consumers 35867 10779078656 Invalid JSON format
+INFO 2024-09-03 11:08:54,107 consumers 35867 10779078656 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:08:54,235 consumers 35867 10779078656 Attempting to connect. User: testuser
+INFO 2024-09-03 11:08:54,235 consumers 35867 10779078656 Accepting connection for user: testuser
+INFO 2024-09-03 11:08:54,235 consumers 35867 10779078656 Received data: {"message": "Test question"}...
+INFO 2024-09-03 11:08:54,235 consumers 35867 10779078656 Processing question: Test question
+INFO 2024-09-03 11:08:54,235 consumers 35867 10779078656 Received response from process_langflow: [{'outputs': [{'results': {'message': {'data': {'text': 'Test response', 'timestamp': '2023-01-01T00:00:00Z'}}}}]}]
+ERROR 2024-09-03 11:08:54,235 consumers 35867 10779078656 An error occurred while processing the request: 'dict' object has no attribute 'outputs'
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/project/app/consumers.py", line 47, in receive
+    result_data = run_output.outputs[0]
+AttributeError: 'dict' object has no attribute 'outputs'
+INFO 2024-09-03 11:13:52,645 utils 36071 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 11:13:53,432 consumers 36071 6158544896 Attempting to connect. User: testuser
+INFO 2024-09-03 11:13:53,432 consumers 36071 6158544896 Accepting connection for user: testuser
+INFO 2024-09-03 11:13:53,432 consumers 36071 6158544896 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:13:53,433 consumers 36071 6158544896 Attempting to connect. User: None
+INFO 2024-09-03 11:13:53,433 consumers 36071 6158544896 Accepting connection for user: None
+INFO 2024-09-03 11:13:54,594 consumers 36071 6325039104 Attempting to connect. User: testuser
+INFO 2024-09-03 11:13:54,594 consumers 36071 6325039104 Accepting connection for user: testuser
+INFO 2024-09-03 11:13:54,594 consumers 36071 6325039104 Received data: Invalid JSON...
+ERROR 2024-09-03 11:13:54,594 consumers 36071 6325039104 Invalid JSON format
+INFO 2024-09-03 11:13:54,594 consumers 36071 6325039104 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:13:54,722 consumers 36071 6325039104 Attempting to connect. User: testuser
+INFO 2024-09-03 11:13:54,722 consumers 36071 6325039104 Accepting connection for user: testuser
+INFO 2024-09-03 11:13:54,722 consumers 36071 6325039104 Received data: {"message": "Test question"}...
+INFO 2024-09-03 11:13:54,722 consumers 36071 6325039104 Processing question: Test question
+INFO 2024-09-03 11:13:54,722 consumers 36071 6325039104 Received response from process_langflow: [{'outputs': [{'results': {'message': {'data': {'text': 'Test response', 'timestamp': '2023-01-01T00:00:00Z'}}}}]}]
+INFO 2024-09-03 11:13:54,722 consumers 36071 6325039104 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:17:22,404 utils 36237 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 11:17:23,189 consumers 36237 6166818816 Attempting to connect. User: testuser
+INFO 2024-09-03 11:17:23,189 consumers 36237 6166818816 Accepting connection for user: testuser
+INFO 2024-09-03 11:17:23,191 consumers 36237 6183645184 Attempting to connect. User: AnonymousUser
+INFO 2024-09-03 11:17:23,191 consumers 36237 6183645184 Rejecting anonymous user
+INFO 2024-09-03 11:17:23,191 consumers 36237 6183645184 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:17:23,339 consumers 36237 6200471552 Attempting to connect. User: testuser
+INFO 2024-09-03 11:17:23,339 consumers 36237 6200471552 Accepting connection for user: testuser
+INFO 2024-09-03 11:17:23,467 consumers 36237 6183645184 Attempting to connect. User: testuser
+INFO 2024-09-03 11:17:23,467 consumers 36237 6183645184 Accepting connection for user: testuser
+INFO 2024-09-03 11:17:44,622 utils 36270 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 11:17:45,373 consumers 36270 6197932032 Attempting to connect. User: testuser
+INFO 2024-09-03 11:17:45,373 consumers 36270 6197932032 Accepting connection for user: testuser
+INFO 2024-09-03 11:17:45,376 consumers 36270 6214758400 Attempting to connect. User: None
+INFO 2024-09-03 11:17:45,376 consumers 36270 6214758400 Accepting connection for user: None
+INFO 2024-09-03 11:17:45,503 consumers 36270 6231584768 Attempting to connect. User: testuser
+INFO 2024-09-03 11:17:45,503 consumers 36270 6231584768 Accepting connection for user: testuser
+INFO 2024-09-03 11:17:45,632 consumers 36270 6214758400 Attempting to connect. User: testuser
+INFO 2024-09-03 11:17:45,632 consumers 36270 6214758400 Accepting connection for user: testuser
+INFO 2024-09-03 11:18:11,059 utils 36319 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 11:18:11,833 consumers 36319 6152286208 Attempting to connect. User: testuser
+INFO 2024-09-03 11:18:11,833 consumers 36319 6152286208 Accepting connection for user: testuser
+INFO 2024-09-03 11:18:11,833 consumers 36319 6152286208 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:18:11,834 consumers 36319 6152286208 Attempting to connect. User: None
+INFO 2024-09-03 11:18:11,834 consumers 36319 6152286208 Accepting connection for user: None
+INFO 2024-09-03 11:18:11,963 consumers 36319 6169112576 Attempting to connect. User: testuser
+INFO 2024-09-03 11:18:11,963 consumers 36319 6169112576 Accepting connection for user: testuser
+INFO 2024-09-03 11:18:12,091 consumers 36319 6152286208 Attempting to connect. User: testuser
+INFO 2024-09-03 11:18:12,091 consumers 36319 6152286208 Accepting connection for user: testuser
+INFO 2024-09-03 11:18:30,136 utils 36354 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 11:18:31,122 consumers 36354 6226325504 Attempting to connect. User: testuser
+INFO 2024-09-03 11:18:31,122 consumers 36354 6226325504 Accepting connection for user: testuser
+INFO 2024-09-03 11:18:31,122 consumers 36354 6226325504 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:18:31,123 consumers 36354 6226325504 Attempting to connect. User: None
+INFO 2024-09-03 11:18:31,124 consumers 36354 6226325504 Accepting connection for user: None
+INFO 2024-09-03 11:18:32,287 consumers 36354 6243151872 Attempting to connect. User: testuser
+INFO 2024-09-03 11:18:32,287 consumers 36354 6243151872 Accepting connection for user: testuser
+INFO 2024-09-03 11:18:32,287 consumers 36354 6243151872 Received data: Invalid JSON...
+ERROR 2024-09-03 11:18:32,287 consumers 36354 6243151872 Invalid JSON format
+INFO 2024-09-03 11:18:32,288 consumers 36354 6243151872 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:18:32,420 consumers 36354 6243151872 Attempting to connect. User: testuser
+INFO 2024-09-03 11:18:32,420 consumers 36354 6243151872 Accepting connection for user: testuser
+INFO 2024-09-03 11:18:32,420 consumers 36354 6243151872 Received data: {"message": "Test question"}...
+INFO 2024-09-03 11:18:32,420 consumers 36354 6243151872 Processing question: Test question
+INFO 2024-09-03 11:18:32,421 consumers 36354 6243151872 Received response from process_langflow: [{'outputs': [{'results': {'message': {'data': {'text': 'Test response', 'timestamp': '2023-01-01T00:00:00Z'}}}}]}]
+INFO 2024-09-03 11:18:32,421 consumers 36354 6243151872 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:19:28,893 utils 36410 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 11:19:29,670 consumers 36410 6198063104 Attempting to connect. User: testuser
+INFO 2024-09-03 11:19:29,670 consumers 36410 6198063104 Accepting connection for user: testuser
+INFO 2024-09-03 11:19:29,670 consumers 36410 6198063104 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:19:29,671 consumers 36410 6198063104 Attempting to connect. User: None
+INFO 2024-09-03 11:19:29,671 consumers 36410 6198063104 Accepting connection for user: None
+INFO 2024-09-03 11:19:29,800 consumers 36410 6214889472 Attempting to connect. User: testuser
+INFO 2024-09-03 11:19:29,800 consumers 36410 6214889472 Accepting connection for user: testuser
+INFO 2024-09-03 11:19:29,928 consumers 36410 6231715840 Attempting to connect. User: testuser
+INFO 2024-09-03 11:19:29,929 consumers 36410 6231715840 Accepting connection for user: testuser
+INFO 2024-09-03 11:19:43,477 utils 36441 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 11:19:44,228 consumers 36441 6197260288 Attempting to connect. User: testuser
+INFO 2024-09-03 11:19:44,228 consumers 36441 6197260288 Accepting connection for user: testuser
+INFO 2024-09-03 11:19:44,228 consumers 36441 6197260288 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:19:44,229 consumers 36441 6197260288 Attempting to connect. User: AnonymousUser
+INFO 2024-09-03 11:19:44,229 consumers 36441 6197260288 Rejecting anonymous user
+INFO 2024-09-03 11:19:44,360 consumers 36441 6214086656 Attempting to connect. User: testuser
+INFO 2024-09-03 11:19:44,360 consumers 36441 6214086656 Accepting connection for user: testuser
+INFO 2024-09-03 11:19:44,487 consumers 36441 6230913024 Attempting to connect. User: testuser
+INFO 2024-09-03 11:19:44,487 consumers 36441 6230913024 Accepting connection for user: testuser
+INFO 2024-09-03 11:20:21,897 utils 36475 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 11:20:22,714 consumers 36475 6224441344 Attempting to connect. User: testuser
+INFO 2024-09-03 11:20:22,715 consumers 36475 6224441344 Accepting connection for user: testuser
+INFO 2024-09-03 11:20:22,715 consumers 36475 6224441344 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:20:22,715 consumers 36475 6224441344 Attempting to connect. User: AnonymousUser
+INFO 2024-09-03 11:20:22,715 consumers 36475 6224441344 Rejecting anonymous user
+INFO 2024-09-03 11:20:22,716 consumers 36475 6224441344 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:20:22,873 consumers 36475 6224441344 Attempting to connect. User: testuser
+INFO 2024-09-03 11:20:22,873 consumers 36475 6224441344 Accepting connection for user: testuser
+INFO 2024-09-03 11:20:22,873 consumers 36475 6224441344 Received data: Invalid JSON...
+ERROR 2024-09-03 11:20:22,873 consumers 36475 6224441344 Invalid JSON format
+INFO 2024-09-03 11:20:22,873 consumers 36475 6224441344 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 11:20:23,002 consumers 36475 6224441344 Attempting to connect. User: testuser
+INFO 2024-09-03 11:20:23,002 consumers 36475 6224441344 Accepting connection for user: testuser
+INFO 2024-09-03 11:20:23,002 consumers 36475 6224441344 Received data: {"message": "Test question"}...
+INFO 2024-09-03 11:20:23,002 consumers 36475 6224441344 Processing question: Test question
+INFO 2024-09-03 11:20:23,003 consumers 36475 6224441344 Received response from process_langflow: [{'outputs': [{'results': {'message': {'data': {'text': 'Test response', 'timestamp': '2023-01-01T00:00:00Z'}}}}]}]
+INFO 2024-09-03 11:20:23,003 consumers 36475 6224441344 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:27:42,487 utils 99477 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 23:28:37,485 utils 99640 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 23:28:38,301 consumers 99640 6120517632 Attempting to connect. User: testuser
+INFO 2024-09-03 23:28:38,301 consumers 99640 6120517632 Accepting connection for user: testuser
+INFO 2024-09-03 23:28:38,301 consumers 99640 6120517632 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:28:38,302 consumers 99640 6120517632 Attempting to connect. User: AnonymousUser
+INFO 2024-09-03 23:28:38,302 consumers 99640 6120517632 Rejecting anonymous user
+INFO 2024-09-03 23:28:38,302 consumers 99640 6120517632 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:28:38,433 consumers 99640 6120517632 Attempting to connect. User: testuser
+INFO 2024-09-03 23:28:38,433 consumers 99640 6120517632 Accepting connection for user: testuser
+INFO 2024-09-03 23:28:38,434 consumers 99640 6120517632 Received data: Invalid JSON...
+ERROR 2024-09-03 23:28:38,434 consumers 99640 6120517632 Invalid JSON format
+INFO 2024-09-03 23:28:38,434 consumers 99640 6120517632 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:28:38,564 consumers 99640 6120517632 Attempting to connect. User: testuser
+INFO 2024-09-03 23:28:38,564 consumers 99640 6120517632 Accepting connection for user: testuser
+INFO 2024-09-03 23:28:38,565 consumers 99640 6120517632 Received data: {"message": "Test question"}...
+INFO 2024-09-03 23:28:38,565 consumers 99640 6120517632 Processing question: Test question
+INFO 2024-09-03 23:28:38,565 consumers 99640 6120517632 Received response from process_langflow: [{'outputs': [{'results': {'message': {'data': {'text': 'Test response', 'timestamp': '2023-01-01T00:00:00Z'}}}}]}]
+ERROR 2024-09-03 23:28:38,565 consumers 99640 6120517632 An error occurred while processing the request: 'dict' object has no attribute 'outputs'
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/project/app/consumers.py", line 48, in receive
+    outputs = run_output.outputs[0]
+AttributeError: 'dict' object has no attribute 'outputs'
+INFO 2024-09-03 23:30:27,081 utils 99961 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 23:30:27,860 consumers 99961 6198292480 Attempting to connect. User: testuser
+INFO 2024-09-03 23:30:27,860 consumers 99961 6198292480 Accepting connection for user: testuser
+INFO 2024-09-03 23:30:27,860 consumers 99961 6198292480 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:30:27,861 consumers 99961 6198292480 Attempting to connect. User: AnonymousUser
+INFO 2024-09-03 23:30:27,861 consumers 99961 6198292480 Rejecting anonymous user
+INFO 2024-09-03 23:30:27,861 consumers 99961 6198292480 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:30:27,989 consumers 99961 6198292480 Attempting to connect. User: testuser
+INFO 2024-09-03 23:30:27,989 consumers 99961 6198292480 Accepting connection for user: testuser
+INFO 2024-09-03 23:30:27,989 consumers 99961 6198292480 Received data: Invalid JSON...
+ERROR 2024-09-03 23:30:27,989 consumers 99961 6198292480 Invalid JSON format
+INFO 2024-09-03 23:30:27,990 consumers 99961 6198292480 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:30:28,120 consumers 99961 6198292480 Attempting to connect. User: testuser
+INFO 2024-09-03 23:30:28,120 consumers 99961 6198292480 Accepting connection for user: testuser
+INFO 2024-09-03 23:30:28,120 consumers 99961 6198292480 Received data: {"message": "Test question"}...
+INFO 2024-09-03 23:30:28,120 consumers 99961 6198292480 Processing question: Test question
+INFO 2024-09-03 23:30:28,121 consumers 99961 6198292480 Received response from process_langflow: [{'outputs': [{'results': {'message': {'data': {'text': 'Test response', 'timestamp': '2023-01-01T00:00:00Z'}}}}]}]
+ERROR 2024-09-03 23:30:28,121 consumers 99961 6198292480 An error occurred while processing the request: 'dict' object has no attribute 'outputs'
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/project/app/consumers.py", line 48, in receive
+    outputs = run_output.outputs[0]
+AttributeError: 'dict' object has no attribute 'outputs'
+INFO 2024-09-03 23:42:37,278 utils 2046 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 23:42:38,124 consumers 2046 6224097280 Attempting to connect. User: testuser
+INFO 2024-09-03 23:42:38,124 consumers 2046 6224097280 Accepting connection for user: testuser
+INFO 2024-09-03 23:42:38,124 consumers 2046 6224097280 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:42:38,125 consumers 2046 6224097280 Attempting to connect. User: AnonymousUser
+INFO 2024-09-03 23:42:38,125 consumers 2046 6224097280 Rejecting anonymous user
+INFO 2024-09-03 23:42:38,125 consumers 2046 6224097280 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:42:38,253 consumers 2046 6224097280 Attempting to connect. User: testuser
+INFO 2024-09-03 23:42:38,253 consumers 2046 6224097280 Accepting connection for user: testuser
+INFO 2024-09-03 23:42:38,253 consumers 2046 6224097280 Received data: Invalid JSON...
+ERROR 2024-09-03 23:42:38,253 consumers 2046 6224097280 Invalid JSON format
+INFO 2024-09-03 23:42:38,253 consumers 2046 6224097280 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:42:38,382 consumers 2046 6224097280 Attempting to connect. User: testuser
+INFO 2024-09-03 23:42:38,382 consumers 2046 6224097280 Accepting connection for user: testuser
+INFO 2024-09-03 23:42:38,382 consumers 2046 6224097280 Received data: {"message": "Test question"}...
+INFO 2024-09-03 23:42:38,382 consumers 2046 6224097280 Processing question: Test question
+INFO 2024-09-03 23:42:38,382 consumers 2046 6224097280 Received response from process_langflow: [{'outputs': [{'results': {'message': {'data': {'text': 'Test response', 'timestamp': '2023-01-01T00:00:00Z'}}}}]}]
+ERROR 2024-09-03 23:42:38,383 consumers 2046 6224097280 An error occurred while processing the request: 'dict' object has no attribute 'outputs'
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/project/app/consumers.py", line 48, in receive
+    outputs = run_output.outputs[0]
+AttributeError: 'dict' object has no attribute 'outputs'
+INFO 2024-09-03 23:43:30,246 utils 2190 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 23:43:31,042 consumers 2190 6199046144 Attempting to connect. User: testuser
+INFO 2024-09-03 23:43:31,042 consumers 2190 6199046144 Accepting connection for user: testuser
+INFO 2024-09-03 23:43:31,042 consumers 2190 6199046144 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:43:31,043 consumers 2190 6199046144 Attempting to connect. User: AnonymousUser
+INFO 2024-09-03 23:43:31,043 consumers 2190 6199046144 Rejecting anonymous user
+INFO 2024-09-03 23:43:31,043 consumers 2190 6199046144 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:43:31,171 consumers 2190 6215872512 Attempting to connect. User: testuser
+INFO 2024-09-03 23:43:31,172 consumers 2190 6215872512 Accepting connection for user: testuser
+INFO 2024-09-03 23:43:31,172 consumers 2190 6215872512 Received data: Invalid JSON...
+ERROR 2024-09-03 23:43:31,172 consumers 2190 6215872512 Invalid JSON format
+INFO 2024-09-03 23:43:31,172 consumers 2190 6215872512 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:43:31,300 consumers 2190 6199046144 Attempting to connect. User: testuser
+INFO 2024-09-03 23:43:31,300 consumers 2190 6199046144 Accepting connection for user: testuser
+INFO 2024-09-03 23:43:31,301 consumers 2190 6199046144 Received data: {"message": "Test question"}...
+INFO 2024-09-03 23:43:31,301 consumers 2190 6199046144 Processing question: Test question
+INFO 2024-09-03 23:43:31,301 consumers 2190 6199046144 Received response from process_langflow: [{'outputs': [{'results': {'message': {'data': {'text': 'Test response', 'timestamp': '2023-01-01T00:00:00Z'}}}}]}]
+ERROR 2024-09-03 23:43:31,301 consumers 2190 6199046144 An error occurred while processing the request: 'dict' object has no attribute 'outputs'
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/project/app/consumers.py", line 48, in receive
+    outputs = run_output.outputs[0]
+AttributeError: 'dict' object has no attribute 'outputs'
+INFO 2024-09-03 23:50:04,455 utils 3108 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 23:50:05,340 consumers 3108 6120615936 Attempting to connect. User: testuser
+INFO 2024-09-03 23:50:05,340 consumers 3108 6120615936 Accepting connection for user: testuser
+INFO 2024-09-03 23:50:05,340 consumers 3108 6120615936 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:50:05,341 consumers 3108 6120615936 Attempting to connect. User: AnonymousUser
+INFO 2024-09-03 23:50:05,341 consumers 3108 6120615936 Rejecting anonymous user
+INFO 2024-09-03 23:50:05,341 consumers 3108 6120615936 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:50:05,476 consumers 3108 6120615936 Attempting to connect. User: testuser
+INFO 2024-09-03 23:50:05,476 consumers 3108 6120615936 Accepting connection for user: testuser
+INFO 2024-09-03 23:50:05,476 consumers 3108 6120615936 Received data: Invalid JSON...
+ERROR 2024-09-03 23:50:05,477 consumers 3108 6120615936 Invalid JSON format
+INFO 2024-09-03 23:50:05,477 consumers 3108 6120615936 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:50:05,612 consumers 3108 6120615936 Attempting to connect. User: testuser
+INFO 2024-09-03 23:50:05,612 consumers 3108 6120615936 Accepting connection for user: testuser
+INFO 2024-09-03 23:50:05,612 consumers 3108 6120615936 Received data: {"message": "Test question"}...
+INFO 2024-09-03 23:50:05,612 consumers 3108 6120615936 Processing question: Test question
+INFO 2024-09-03 23:50:05,613 consumers 3108 6120615936 Received response from process_langflow: [{'outputs': [{'results': {'message': {'data': {'text': 'Test response', 'timestamp': '2023-01-01T00:00:00Z'}}}}]}]
+ERROR 2024-09-03 23:50:05,613 consumers 3108 6120615936 An error occurred while processing the request: 'dict' object has no attribute 'outputs'
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/project/app/consumers.py", line 49, in receive
+    outputs = run_output.outputs[0]
+AttributeError: 'dict' object has no attribute 'outputs'
+INFO 2024-09-03 23:51:13,852 utils 3296 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 23:51:14,649 consumers 3296 10761105408 Attempting to connect. User: testuser
+INFO 2024-09-03 23:51:14,649 consumers 3296 10761105408 Accepting connection for user: testuser
+INFO 2024-09-03 23:51:14,649 consumers 3296 10761105408 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:51:14,650 consumers 3296 10761105408 Attempting to connect. User: AnonymousUser
+INFO 2024-09-03 23:51:14,650 consumers 3296 10761105408 Rejecting anonymous user
+INFO 2024-09-03 23:51:14,650 consumers 3296 10761105408 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:51:14,778 consumers 3296 10761105408 Attempting to connect. User: testuser
+INFO 2024-09-03 23:51:14,778 consumers 3296 10761105408 Accepting connection for user: testuser
+INFO 2024-09-03 23:51:14,778 consumers 3296 10761105408 Received data: Invalid JSON...
+ERROR 2024-09-03 23:51:14,778 consumers 3296 10761105408 Invalid JSON format
+INFO 2024-09-03 23:51:14,778 consumers 3296 10761105408 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:51:14,910 consumers 3296 10761105408 Attempting to connect. User: testuser
+INFO 2024-09-03 23:51:14,910 consumers 3296 10761105408 Accepting connection for user: testuser
+INFO 2024-09-03 23:51:14,910 consumers 3296 10761105408 Received data: {"message": "Test question"}...
+INFO 2024-09-03 23:51:14,910 consumers 3296 10761105408 Processing question: Test question
+INFO 2024-09-03 23:51:14,910 consumers 3296 10761105408 Received response from process_langflow: [{'outputs': [{'results': {'message': {'data': {'text': 'Test response'}}}}]}]
+ERROR 2024-09-03 23:51:14,910 consumers 3296 10761105408 An error occurred while processing the request: 'dict' object has no attribute 'outputs'
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/project/app/consumers.py", line 49, in receive
+    outputs = run_output.outputs[0]
+AttributeError: 'dict' object has no attribute 'outputs'
+INFO 2024-09-03 23:52:05,276 utils 3463 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 23:52:06,071 consumers 3463 6292336640 Attempting to connect. User: testuser
+INFO 2024-09-03 23:52:06,071 consumers 3463 6292336640 Accepting connection for user: testuser
+INFO 2024-09-03 23:52:06,072 consumers 3463 6292336640 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:52:06,072 consumers 3463 6292336640 Attempting to connect. User: AnonymousUser
+INFO 2024-09-03 23:52:06,072 consumers 3463 6292336640 Rejecting anonymous user
+INFO 2024-09-03 23:52:06,073 consumers 3463 6292336640 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:52:06,201 consumers 3463 6292336640 Attempting to connect. User: testuser
+INFO 2024-09-03 23:52:06,201 consumers 3463 6292336640 Accepting connection for user: testuser
+INFO 2024-09-03 23:52:06,201 consumers 3463 6292336640 Received data: Invalid JSON...
+ERROR 2024-09-03 23:52:06,201 consumers 3463 6292336640 Invalid JSON format
+INFO 2024-09-03 23:52:06,201 consumers 3463 6292336640 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:52:06,330 consumers 3463 6292336640 Attempting to connect. User: testuser
+INFO 2024-09-03 23:52:06,330 consumers 3463 6292336640 Accepting connection for user: testuser
+INFO 2024-09-03 23:52:06,330 consumers 3463 6292336640 Received data: {"message": "Test question"}...
+INFO 2024-09-03 23:52:06,330 consumers 3463 6292336640 Processing question: Test question
+INFO 2024-09-03 23:52:06,331 consumers 3463 6292336640 Received response from process_langflow: [{'outputs': [{'results': {'message': {'data': {'text': 'Test response', 'timestamp': '2023-07-01T12:00:00.000Z'}}}}]}]
+ERROR 2024-09-03 23:52:06,331 consumers 3463 6292336640 An error occurred while processing the request: 'dict' object has no attribute 'outputs'
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/project/app/consumers.py", line 49, in receive
+    outputs = run_output.outputs[0]
+AttributeError: 'dict' object has no attribute 'outputs'
+INFO 2024-09-03 23:54:44,271 utils 3873 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-03 23:54:45,127 consumers 3873 6247952384 Attempting to connect. User: testuser
+INFO 2024-09-03 23:54:45,127 consumers 3873 6247952384 Accepting connection for user: testuser
+INFO 2024-09-03 23:54:45,127 consumers 3873 6247952384 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:54:45,128 consumers 3873 6247952384 Attempting to connect. User: AnonymousUser
+INFO 2024-09-03 23:54:45,128 consumers 3873 6247952384 Rejecting anonymous user
+INFO 2024-09-03 23:54:45,128 consumers 3873 6247952384 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:54:45,258 consumers 3873 6247952384 Attempting to connect. User: testuser
+INFO 2024-09-03 23:54:45,258 consumers 3873 6247952384 Accepting connection for user: testuser
+INFO 2024-09-03 23:54:45,258 consumers 3873 6247952384 Received data: Invalid JSON...
+ERROR 2024-09-03 23:54:45,258 consumers 3873 6247952384 Invalid JSON format
+INFO 2024-09-03 23:54:45,258 consumers 3873 6247952384 WebSocket disconnected. Close code: 1000
+INFO 2024-09-03 23:54:45,387 consumers 3873 6247952384 Attempting to connect. User: testuser
+INFO 2024-09-03 23:54:45,387 consumers 3873 6247952384 Accepting connection for user: testuser
+INFO 2024-09-03 23:54:45,387 consumers 3873 6247952384 Received data: {"message": "Test question"}...
+INFO 2024-09-03 23:54:45,387 consumers 3873 6247952384 Processing question: Test question
+INFO 2024-09-03 23:54:45,388 consumers 3873 6247952384 Received response from process_langflow: [{'outputs': [{'results': {'message': {'data': {'text': 'Test response', 'timestamp': '2023-07-01T12:00:00.000Z'}}}}]}]
+ERROR 2024-09-03 23:54:45,388 consumers 3873 6247952384 An error occurred while processing the request: 'dict' object has no attribute 'outputs'
+Traceback (most recent call last):
+  File "/Users/nkurayijah/development/Djangoprojects/ur_langflow/project/app/consumers.py", line 49, in receive
+    outputs = run_output.outputs[0]
+AttributeError: 'dict' object has no attribute 'outputs'
+INFO 2024-09-04 00:03:15,187 utils 5162 8002277376 NumExpr defaulting to 8 threads.
+INFO 2024-09-04 00:03:16,000 consumers 5162 6127464448 Attempting to connect. User: testuser
+INFO 2024-09-04 00:03:16,000 consumers 5162 6127464448 Accepting connection for user: testuser
+INFO 2024-09-04 00:03:16,001 consumers 5162 6127464448 WebSocket disconnected. Close code: 1000
+INFO 2024-09-04 00:03:16,001 consumers 5162 6127464448 Attempting to connect. User: AnonymousUser
+INFO 2024-09-04 00:03:16,001 consumers 5162 6127464448 Rejecting anonymous user
+INFO 2024-09-04 00:03:16,002 consumers 5162 6127464448 WebSocket disconnected. Close code: 1000
+INFO 2024-09-04 00:03:16,133 consumers 5162 6127464448 Attempting to connect. User: testuser
+INFO 2024-09-04 00:03:16,133 consumers 5162 6127464448 Accepting connection for user: testuser
+INFO 2024-09-04 00:03:16,133 consumers 5162 6127464448 Received data: Invalid JSON...
+ERROR 2024-09-04 00:03:16,134 consumers 5162 6127464448 Invalid JSON format
+INFO 2024-09-04 00:03:16,134 consumers 5162 6127464448 WebSocket disconnected. Close code: 1000
+INFO 2024-09-04 00:03:16,262 consumers 5162 6127464448 Attempting to connect. User: testuser
+INFO 2024-09-04 00:03:16,262 consumers 5162 6127464448 Accepting connection for user: testuser
+INFO 2024-09-04 00:03:16,262 consumers 5162 6127464448 Received data: {"message": "Test question"}...
+INFO 2024-09-04 00:03:16,262 consumers 5162 6127464448 Processing question: Test question
+INFO 2024-09-04 00:03:16,263 consumers 5162 6127464448 Received response from process_langflow: [{'unexpected': 'structure'}]
+WARNING 2024-09-04 00:03:16,263 consumers 5162 6127464448 Unexpected response structure: [{'unexpected': 'structure'}]
+INFO 2024-09-04 00:03:16,263 consumers 5162 6127464448 WebSocket disconnected. Close code: 1000
+INFO 2024-09-04 00:03:16,390 consumers 5162 6127464448 Attempting to connect. User: testuser
+INFO 2024-09-04 00:03:16,391 consumers 5162 6127464448 Accepting connection for user: testuser
+INFO 2024-09-04 00:03:16,391 consumers 5162 6127464448 Received data: {"message": "Test question"}...
+INFO 2024-09-04 00:03:16,391 consumers 5162 6127464448 Processing question: Test question
+INFO 2024-09-04 00:03:16,391 consumers 5162 6127464448 Received response from process_langflow: [<app.tests.test_consumers.MockRunOutputs object at 0x16b7b21d0>]
+INFO 2024-09-04 00:03:16,391 consumers 5162 6127464448 WebSocket disconnected. Close code: 1000
