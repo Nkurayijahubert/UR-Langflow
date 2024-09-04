@@ -51,15 +51,15 @@ ASTRA_DB_API_ENDPOINT=your_astra_db_api_endpoint
 4. **Build Docker Images:**
 
    ```bash
-   docker build -f Dockerfile.web -t nkurayijah/ibl_web:latest .
-   docker build -f Dockerfile.websocket -t nkurayijah/ibl_websocket:latest .
+   docker build -f Dockerfile.web -t username/ibl_web:latest .
+   docker build -f Dockerfile.websocket -t username/ibl_websocket:latest .
    ```
 
 5. **Push Images to the Registry:**
 
    ```bash
-   docker push nkurayijah/ibl_web:latest
-   docker push nkurayijah/ibl_websocket:latest
+   docker push username/ibl_web:latest
+   docker push username/ibl_websocket:latest
    ```
 
 6. **Deploy the Stack:**
