@@ -38,8 +38,8 @@ ASTRA_DB_API_ENDPOINT=your_astra_db_api_endpoint
 2. **Generate Password and Secret Key:**
 
    ```bash
-   echo "WVcc2bJ5m1gB5iSLRgPT" | docker secret create ibl_db_password -
-   echo "F5D24B33AF85FD7FE91D3FB2B624E" | docker secret create ibl_django_secret_key -
+   echo "your password" | docker secret create ibl_db_password -
+   echo "your secret key" | docker secret create ibl_django_secret_key -
    ```
 
 3. **Docker Login:**
