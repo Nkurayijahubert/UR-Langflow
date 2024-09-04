@@ -1,165 +1,128 @@
+
 # UR-langflow
 
-UR-langflow is a project that integrates Docker Swarm with Django REST Framework to expose a WebSocket interface using Langflow. The WebSocket prompts an agent that leverages a locally deployed, finetuned Large Language Model (LLM) and a custom Langflow tool to answer questions. To ensure security, the WebSocket is accessible only via token-based authentication.
+This project provides a Django backend with WebSocket support and JWT-based authentication. The backend is designed to work with a locally deployed, finetuned Large Language Model (LLM) to assist students pursuing undergraduate programs at the University of Rwanda.
 
 ## Features
 
-- **WebSocket Interface**: Exposes a WebSocket endpoint that interacts with Langflow.
-- **Custom Langflow Tool**: Integrates a custom tool into Langflow for enhanced capabilities.
-- **Locally Deployed LLM**: Uses a finetuned LLM deployed locally.
-- **Token-Based Authentication**: Secure access to the WebSocket via JWT tokens.
+- JWT-based authentication
+- WebSocket support for real-time communication
+- Integration with a locally deployed LLM
 
-## Installation
+## Setup
 
 ### Prerequisites
 
-- Docker & Docker Swarm
-- Python 3.8+
-- Django 4.0+
-- [Langflow](https://github.com/langflow/langflow)
+- Docker and Docker Swarm
+- Python 3.x
+- Django
+- PostgreSQL
 
-### Setup
+### Environment Variables
 
-1. **Clone the Repository**
+Create a `.env` file with the following variables:
 
-   ```bash
-   git clone https://github.com/Nkurayijahubert/UR-langflow.git
-   cd UR-langflow
-   ```
-
-2. **Environment Setup**
-
-   Create a `.env` file in the root directory with the following environment variables:
-
-   ```env
-   OPENAI_API_KEY=your_openai_api_key
-   ASTRA_DB_APPLICATION_TOKEN=your_astra_db_application_token
-   ASTRA_DB_API_ENDPOINT=your_astra_db_api_endpoint
-   ```
-
-3. **Build Docker Containers**
-
-   - **Initialize Docker Swarm**:
-
-     ```bash
-     docker swarm init
-     ```
-
-   - **Generate Password and Secret Key**:
-
-     ```bash
-     echo "WVcc2bJ5m1gB5iSLRgPT" | docker secret create ibl_db_password -
-     echo "F5D24B33AF85FD7FE91D3FB2B624E" | docker secret create ibl_django_secret_key -
-     ```
-
-   - **Docker Login**:
-
-     ```bash
-     docker login
-     ```
-
-   - **Build Images**:
-
-     ```bash
-     docker build -f Dockerfile.web -t username/ibl_web:latest .
-     docker build -f Dockerfile.websocket -t username/ibl_websocket:latest .
-     ```
-
-   - **Push Images to the Registry**:
-
-     ```bash
-     docker push username/ibl_web:latest
-     docker push username/ibl_websocket:latest
-     ```
-
-   - **Deploy the Stack**:
-
-     ```bash
-     docker stack deploy -c docker-compose.yml ibl_app
-     ```
-
-4. **Apply Migrations**
-
-   Once the services are running, apply the Django migrations:
-
-   ```bash
-   docker exec -it <django_service_container_id> python manage.py migrate
-   ```
-
-5. **Create a Superuser**
-
-   Create a Django superuser to access the admin panel:
-
-   ```bash
-   docker exec -it <django_service_container_id> python manage.py createsuperuser
-   ```
-
-### Running the Project
-
-Once everything is set up, the WebSocket interface should be accessible via the designated endpoint. Authentication is required, so be sure to obtain a JWT token first.
-
-## Usage
-
-### Authentication
-
-1. **Register a User**
-
-   Send a POST request to the `/api/register/` endpoint with your credentials to register:
-
-   ```json
-   {
-     "username": "your_username",
-     "password": "your_password"
-   }
-   ```
-
-2. **Obtain a Token**
-
-   Once registered, send a POST request to the `/api/token/` endpoint with your credentials to obtain a JWT token:
-
-   ```json
-   {
-     "username": "your_username",
-     "password": "your_password"
-   }
-   ```
-
-3. **Access WebSocket**
-
-   Use the obtained token to authenticate WebSocket connections at `ws://localhost:8001/ws/chat/`:
-
-   ```javascript
-   const socket = new WebSocket("ws://localhost:8001/ws/chat/");
-   socket.onopen = function (event) {
-     socket.send(
-       JSON.stringify({
-         type: "authenticate",
-         token: "your_jwt_token",
-       })
-     );
-   };
-   ```
-
-### Interacting with the Agent
-
-Once authenticated, send a message to the WebSocket to interact with the Langflow agent:
-
-```json
-{
-  "message": "your_question_here"
-}
+```env
+OPENAI_API_KEY=your_openai_api_key
+ASTRA_DB_APPLICATION_TOKEN=your_astra_db_application_token
+ASTRA_DB_API_ENDPOINT=your_astra_db_api_endpoint
 ```
 
-The agent will process your request using the locally deployed LLM and the custom Langflow tool.
+### Docker Setup
 
-## Contributing
+1. **Initialize Docker Swarm:**
 
-Contributions are welcome! Please fork the repository and create a pull request with your changes. Make sure to follow the coding standards and write tests where applicable.
+   ```bash
+   docker swarm init
+   ```
 
-## License
+2. **Generate Password and Secret Key:**
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+   ```bash
+   echo "WVcc2bJ5m1gB5iSLRgPT" | docker secret create ibl_db_password -
+   echo "F5D24B33AF85FD7FE91D3FB2B624E" | docker secret create ibl_django_secret_key -
+   ```
 
-## Contact
+3. **Docker Login:**
 
-For any inquiries or support, please reach out to [Nkurayijah Hubert](mailto:nkurayijah@gmail.com).
+   ```bash
+   docker login
+   ```
+
+4. **Build Docker Images:**
+
+   ```bash
+   docker build -f Dockerfile.web -t nkurayijah/ibl_web:latest .
+   docker build -f Dockerfile.websocket -t nkurayijah/ibl_websocket:latest .
+   ```
+
+5. **Push Images to the Registry:**
+
+   ```bash
+   docker push nkurayijah/ibl_web:latest
+   docker push nkurayijah/ibl_websocket:latest
+   ```
+
+6. **Deploy the Stack:**
+
+   ```bash
+   docker stack deploy -c docker-compose.yml ibl_app
+   ```
+
+### Testing the WebSocket with Postman
+
+You can test the WebSocket connection using Postman. Follow these steps:
+
+1. **Open Postman**:
+   - Launch Postman on your system.
+
+2. **Create a New WebSocket Request**:
+   - Click "New" > "WebSocket Request."
+   - Enter the WebSocket URL: `ws://localhost:8001/ws/chat/`.
+   - Click "Connect" to establish the connection.
+
+3. **Set the Authorization Header**:
+   - After connecting, navigate to the "Headers" section.
+   - Add the following header:
+     - **Key**: `Authorization`
+     - **Value**: `Bearer your_jwt_token`
+   - Replace `your_jwt_token` with your actual JWT token.
+
+4. **Send a Message**:
+   - In the message field, enter the following JSON structure:
+     ```json
+     {
+       "message": "your question"
+     }
+     ```
+   - Click "Send" to send the message to the server.
+
+5. **View the Response**:
+   - The server's response will appear in the response section of Postman.
+
+6. **Close the WebSocket Connection**:
+   - After testing, click "Disconnect" to close the WebSocket connection.
+
+### Example WebSocket Request in Postman
+
+- **URL**: `ws://localhost:8001/ws/chat/`
+- **Headers**:
+  - `Authorization: Bearer your_jwt_token`
+- **Message Body**:
+  ```json
+  {
+    "message": "How does this work?"
+  }
+  ```
+
+### Obtain JWT Token
+
+1. **Register**:
+   - Register by sending a POST request to `http://localhost:80/api/register/` with your username and password.
+
+2. **Get the Token**:
+   - Obtain the token by sending a POST request to `http://localhost:80/api/token/` using the same credentials.
+
+### Contact
+
+For any issues or questions, please contact [Nkurayijah Hubert](mailto:nkurayijah@gmail.com).
